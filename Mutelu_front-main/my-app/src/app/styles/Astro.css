@@ -1,0 +1,156 @@
+
+.astro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.astro-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.see-all-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.astro-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-scroll-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.astro-images-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%; 
+    gap: 10px;
+    padding: 10px; 
+}
+
+.astro-image {
+    scroll-snap-align: center;
+    margin: 50px;
+    margin-bottom: 100px;
+    scale:1.4;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.astro-image:hover {
+    transform: scale(1.1);
+}
+
+.circle-indicators {
+    margin-top: 10px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .astro-header {
+        font-size: 1.2em;
+    }
+
+    .astro-images-container {
+        gap: 8px;
+    }
+
+    .astro-image {
+        margin-right: 80px;
+        margin-bottom: 80px;
+        scale:0.7;
+        flex: 0 0 33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .astro-header {
+        font-size: 1em;
+    }
+
+    .carousel-scroll-button {
+        font-size: 20px;
+        padding: 0 8px;
+    }
+
+    .astro-images-container {
+        gap: 8px;
+    }
+
+    .astro-image {
+        flex: 0 0 50%; 
+        margin-right: 50px;
+        margin-bottom: 60px;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .astro {
+        margin-top: 30px;
+    }
+
+    .astro-header {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    .see-all-button {
+        font-size: 14px;
+    }
+
+    .carousel-scroll-button {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+
+    .astro-images-container {
+        gap: 5px;
+    }
+
+    .astro-image {
+        flex: 0 0 80%; /* Show 1 image at a time */
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+
+    .circle {
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+    }
+}

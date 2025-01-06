@@ -1,0 +1,53 @@
+
+.horo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.horo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horoscope-header-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horo-detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.horo-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+.horo-image-container {
+    display: flex;
+    gap: 0px; /* No gap between images */
+}
+
+.horo-image {
+    width: 520px;
+    height: 520px;
+    border-radius: 20px;
+    background-color: #EAEAEA;
+    object-fit: cover;
+    border: 2px solid transparent; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, border 0.1s ease; 
+}
+
+.horo-image:hover {
+    transform: scale(1.01);
+    border: 100px;
+    outline: 10px solid #EAEAEA;
+    background-color: #EAEAEA;
+}

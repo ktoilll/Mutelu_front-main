@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../fonts/Times New Roman Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #BE1E2D;
+    --text-color: #fff;
+    --hover-color: #ccc;
+    --button-bg: #007bff; /* Bootstrap primary color */
+    --button-text: #fff;
+    --button-menu: #FBD6DD;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 10px;
+}
+
+.header-sub-title {
+    font-size: 15px;
+    margin-top: -10px;
+    letter-spacing: 3px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.toggle-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    background-color: var(--button-menu);
+    border: none;
+    color: black;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, outline 0.3s;
+    border-radius: 100px;
+}
+
+.nav-button:hover {
+    outline: 4px solid yellow;
+    background-color: pink;
+}
+
+.nav-button:active {
+    background-color: yellow;
+}
+
+.user-name-button {
+    background-color: var(--bg-color);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, outline 0.3s, transform 0.3s;
+}
+
+.user-name-button:hover {
+    background-color: #C70039;
+    transform: scale(1.1);
+}
+
+.user-name-button:active {
+    background-color: #900C3F;
+    transform: scale(1);
+}
+
+.get-started-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-color);
+        padding: 1rem;
+        display: none;
+        z-index: 1000;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}

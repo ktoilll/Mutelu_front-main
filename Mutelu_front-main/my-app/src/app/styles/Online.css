@@ -1,0 +1,54 @@
+.online-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.online-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.online-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.online-image-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%; 
+    gap: 10px;
+    padding: 10px; 
+    
+    transition: transform 0.3s ease; 
+}
+
+.online-image {
+    object-fit: cover;
+    width: 400px;
+    height: 600px;
+    scale: 0.9;
+    border-radius: 100px; /* Rounded corners */
+    margin-bottom: 20px;
+    margin-right: -10px ;
+    background-color: rgb(250, 248, 248);
+    object-fit: cover;
+    border: 2px solid #ddd; /* Light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.online-image:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    z-index: 1; /* Bring the hovered image above others if needed */
+}

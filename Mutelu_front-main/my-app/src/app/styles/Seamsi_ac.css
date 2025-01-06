@@ -1,0 +1,121 @@
+.seamsi_ac-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.seamsi_ac-header {
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}
+
+.seamsi-image-wrapper {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 4rem;
+    margin: auto;
+    background: linear-gradient(180deg,rgba(255, 192, 203, 0.493),rgba(255, 192, 203, 0.493),rgba(255, 192, 203, 0.493),rgba(255, 192, 203, 0.493), rgba(255, 202, 132, 0.514));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seamsi-image-wrapper-card {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 4rem;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seamsi_ac-title h5 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #000000;
+    max-width: 1000%;
+    padding: 0.5rem;
+   
+}
+
+.seamsi_ac-title button {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 3rem;
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seamsi_ac-title button:hover {
+    background-color: #BE1E2D;
+}
+
+.seamsi_rs-container {
+    background-color: pink;
+    border: 10px solid  #BE1E2D;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+.seamsi_rs-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.seamsi_rs-title {
+    text-align: center;
+}
+
+.seamsi_rs-title h2 {
+    font-size: 2.5rem; 
+    font-weight: 100;
+    margin-top: -5rem;
+}
+
+.seamsi_rs-title h5 {
+    text-align: center;
+    font-size: 1.2rem; 
+    margin-top: 1rem;
+    line-height: 1.5; 
+}
+
+.seamsi_rs-title button {
+    background-color: #BE1E2D;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10rem;
+    margin-top: 3rem;
+    padding: 0.3rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+}
+
+.seamsi_rs-title button:hover {
+    background-color:  #D9D9D9;
+  
+}
+
+
+
+
+

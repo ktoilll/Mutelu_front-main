@@ -1,0 +1,49 @@
+.merch-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.merch-header {
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.merch-header-image {
+    width: 200px;
+    height: auto;
+}
+
+.merch-navigation-symbols {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.merch-detail {
+    flex-grow: 1;
+}
+
+.merch-carousel {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.merch-image {
+    width: 200px;
+    height: auto;
+    scale: 0.85;
+    transition: transform 0.3s ease;
+}
+
+.merch-image:hover {
+    transform: scale(1.1);
+}
+
+.merch-header:hover {
+    transform: scale(1.1);
+}
+
+.merch-navigation-symbols:hover {
+    transform: scale(1.1);
+}
